@@ -22,8 +22,6 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    env:
-      ALARM_FILE: ${{ runner.temp }}/alarms.txt
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
 
@@ -31,6 +29,7 @@ jobs:
         id: update
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          ALARM_FILE: ${{ runner.temp }}/alarms.txt
           RECHECK: ${{ inputs.recheck && '--recheck' || '' }}
         run: |
           status=0
@@ -53,6 +52,7 @@ jobs:
         if: steps.update.outputs.status == '2'
         env:
           GH_TOKEN: ${{ github.token }}
+          ALARM_FILE: ${{ runner.temp }}/alarms.txt
         run: |
           title="Hash alarm: a DigiByte release needs checking"
           body="$(cat "$ALARM_FILE")"$'\n\n'"Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
