@@ -25,7 +25,7 @@
             "github-digest",
             "SHA256SUMS"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-9.26.7-aarch64-linux-gnu.tar.gz",
@@ -39,7 +39,7 @@
             "github-digest",
             "SHA256SUMS"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -67,7 +67,7 @@
             "github-digest",
             "SHA256SUMS"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-9.26.6-aarch64-linux-gnu.tar.gz",
@@ -81,7 +81,7 @@
             "github-digest",
             "SHA256SUMS"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -109,7 +109,7 @@
             "github-digest",
             "SHA256SUMS"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-9.26.6rc2-aarch64-linux-gnu.tar.gz",
@@ -123,7 +123,7 @@
             "github-digest",
             "SHA256SUMS"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -150,7 +150,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-9.26.6rc1-aarch64-linux-gnu.tar.gz",
@@ -163,7 +163,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -190,7 +190,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-9.26.5-aarch64-linux-gnu.tar.gz",
@@ -203,7 +203,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -230,7 +230,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-9.26.4-aarch64-linux-gnu.tar.gz",
@@ -243,7 +243,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -270,7 +270,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-9.26.3-aarch64-linux-gnu.tar.gz",
@@ -283,7 +283,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -310,7 +310,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-9.26.2-aarch64-linux-gnu.tar.gz",
@@ -323,7 +323,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -350,7 +350,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-8.26.2-aarch64-linux-gnu.tar.gz",
@@ -363,7 +363,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -390,7 +390,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -417,7 +417,7 @@
             "download",
             "github-digest"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -443,7 +443,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-8.22.2-aarch64-linux-gnu.tar.gz",
@@ -455,7 +455,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -481,7 +481,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-v8.22.1-aarch64-linux-gnu.tar.gz",
@@ -493,7 +493,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -519,7 +519,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-aarch64-linux-gnu.tar.gz",
@@ -531,7 +531,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -557,7 +557,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-aarch64-linux-gnu.tar.gz",
@@ -569,7 +569,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -595,7 +595,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-8.22.0-rc4-aarch64-linux-gnu.tar.gz",
@@ -607,7 +607,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -633,7 +633,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-8.22.0-rc3-aarch64-linux-gnu.tar.gz",
@@ -645,7 +645,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -671,7 +671,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "DigiByte-v8.22.0-RC2-aarch64-linux-gnu.tar.gz",
@@ -683,7 +683,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -709,7 +709,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-7.17.3-aarch64-linux-gnu.tar.gz",
@@ -721,7 +721,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     },
@@ -747,7 +747,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         },
         "aarch64": {
           "file": "digibyte-7.17.2-aarch64-linux-gnu.tar.gz",
@@ -759,7 +759,7 @@
           "verified_by": [
             "download"
           ],
-          "verified_at": "2026-10-10T00:24:49Z"
+          "verified_at": "2026-10-10T00:27:22Z"
         }
       }
     }
