@@ -1,5 +1,9 @@
 # DigiByte Core hashes for DigiNode Tools
 
+[![Sponsor DigiNode Tools](https://img.shields.io/badge/Sponsor-DigiNode%20Tools-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/DigiNode-Tools)
+
+**Find this useful?** Please consider [sponsoring me on GitHub](https://github.com/sponsors/DigiNode-Tools), so I can devote more time to DigiNode Tools and projects like this one.
+
 DigiNode Setup checks every DigiByte Core binary it downloads against the SHA256 hashes in this repo. If the hash doesn't match, it won't install it.
 
 A GitHub Action checks for new DigiByte Core releases every day. When it finds one, it downloads the Linux binaries (`x86_64` and `aarch64`) and only pins the hash if every available source agrees:
