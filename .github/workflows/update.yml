@@ -1,0 +1,69 @@
+name: Update DigiByte hashes
+
+on:
+  schedule:
+    - cron: "23 5 * * *"   # Daily. Only downloads anything when a release is new or has changed.
+  workflow_dispatch:
+    inputs:
+      recheck:
+        description: "Re-download and re-verify every binary"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: update-hashes
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      ALARM_FILE: ${{ runner.temp }}/alarms.txt
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+
+      - name: Check releases and verify hashes
+        id: update
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RECHECK: ${{ inputs.recheck && '--recheck' || '' }}
+        run: |
+          status=0
+          scripts/update.sh $RECHECK || status=$?
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          # 0 = OK, 2 = alarms (handled below). Anything else means the script failed.
+          [ "$status" -eq 0 ] || [ "$status" -eq 2 ]
+
+      - name: Commit changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add hashes.json hash*.json
+            git commit -m "Update DigiByte hashes"
+            git push
+          fi
+
+      - name: Raise alarm
+        if: steps.update.outputs.status == '2'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Hash alarm: a DigiByte release needs checking"
+          body="$(cat "$ALARM_FILE")"$'\n\n'"Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          issue=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[0].number // empty')
+          if [ -z "$issue" ]; then
+            gh issue create --title "$title" --body "$body"
+          else
+            # Only comment again if the alarms are different from last time
+            last=$(gh issue view "$issue" --json body,comments --jq '(.comments | last | .body) // .body')
+            if [ "${last%%$'\n\n'Run:*}" != "$(cat "$ALARM_FILE")" ]; then
+              gh issue comment "$issue" --body "$body"
+            fi
+          fi
+          exit 1
