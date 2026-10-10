@@ -342,7 +342,7 @@ for group in 0 1 2 3 4; do
 done
 
 # ------------------------------------------------------------------------------------------
-# Build the release files for DigiNode Setup v0.12.0 onwards
+# Build the release files for DigiNode Setup v26.10.01 onwards
 #
 #   releases0.json   - staging, as hash0.json
 #   releases1-4.json - update groups, as hash1-4.json
