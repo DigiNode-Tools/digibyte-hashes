@@ -26,7 +26,7 @@ It also checks the file was uploaded by a trusted DigiByte developer (`TRUSTED_U
 | `releases0.json` – `releases4.json` | The same releases as the matching `hash` file, newest first, with everything needed to install each one: version, publish date, pre-release flag, and for each architecture the real file name, download URL, SHA256, size and the folder inside the tarball. Also `latest` and `latest_release`: the newest versions on GitHub, which may not have reached that group yet. |
 | `hashes.json` | Everything the Action knows: pinned hashes, where they were verified, status and rollout dates. |
 
-DigiNode Setup v0.12.0 onwards reads `https://raw.githubusercontent.com/DigiNode-Tools/digibyte-hashes/main/releases<group>.json`. Older versions read `hash<group>.json`, which keeps its original format.
+DigiNode Setup v26.10.01 onwards reads `https://raw.githubusercontent.com/DigiNode-Tools/digibyte-hashes/main/releases<group>.json`. Older versions read `hash<group>.json`, which keeps its original format.
 
 Each tarball must contain a single folder with `bin/digibyted` and `bin/digibyte-cli` in it, or it isn't published. The folder name varies between releases (some use a commit hash), so DigiNode Setup unpacks it into a folder of its own rather than relying on it.
 
