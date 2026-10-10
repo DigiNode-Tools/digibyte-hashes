@@ -1,0 +1,410 @@
+{
+  "latest": "9.26.7",
+  "latest_release": "9.26.7",
+  "releases": [
+    {
+      "version": "9.26.6",
+      "tag": "v9.26.6",
+      "published_at": "2026-10-01T19:17:45Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-9.26.6-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.6/digibyte-9.26.6-x86_64-linux-gnu.tar.gz",
+          "sha256": "cdbd6ed7efdb006b91b76389db79d2a3db2593f05e56dd789f394a1b4366c211",
+          "size": 69746495,
+          "folder": "digibyte-9.26.6"
+        },
+        "aarch64": {
+          "file": "digibyte-9.26.6-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.6/digibyte-9.26.6-aarch64-linux-gnu.tar.gz",
+          "sha256": "05cc75f57e934882673b941f1c9c0b99eaddc2fd7fa797224b7187c95db61e96",
+          "size": 66859352,
+          "folder": "digibyte-9.26.6"
+        }
+      }
+    },
+    {
+      "version": "9.26.6rc2",
+      "tag": "v9.26.6rc2",
+      "published_at": "2026-09-22T21:35:48Z",
+      "prerelease": true,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-9.26.6rc2-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.6rc2/digibyte-9.26.6rc2-x86_64-linux-gnu.tar.gz",
+          "sha256": "eb615258b66fe25276e4b96b9ce4d680e116ea6ea6b5daa306ffd524a93295a7",
+          "size": 69728379,
+          "folder": "digibyte-9.26.6rc2"
+        },
+        "aarch64": {
+          "file": "digibyte-9.26.6rc2-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.6rc2/digibyte-9.26.6rc2-aarch64-linux-gnu.tar.gz",
+          "sha256": "5e496af872cd1c244ddd886134ed84ca7fa648d135b7c2bb6c45dd64c09455fa",
+          "size": 66839066,
+          "folder": "digibyte-9.26.6rc2"
+        }
+      }
+    },
+    {
+      "version": "9.26.6rc1",
+      "tag": "v9.26.6rc1",
+      "published_at": "2026-09-14T21:19:24Z",
+      "prerelease": true,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-9.26.6rc1-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.6rc1/digibyte-9.26.6rc1-x86_64-linux-gnu.tar.gz",
+          "sha256": "d42c54c33ed037f5f506e45db70c99cc94652f2f740ff48ba48f0b7869cdb0e4",
+          "size": 69594942,
+          "folder": "digibyte-9.26.6rc1"
+        },
+        "aarch64": {
+          "file": "digibyte-9.26.6rc1-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.6rc1/digibyte-9.26.6rc1-aarch64-linux-gnu.tar.gz",
+          "sha256": "6afebf543c0296c68daeafcbc93fcee9adc0ec54581081a606db1ecc7fddb25c",
+          "size": 66727705,
+          "folder": "digibyte-9.26.6rc1"
+        }
+      }
+    },
+    {
+      "version": "9.26.5",
+      "tag": "v9.26.5",
+      "published_at": "2026-07-23T15:52:56Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-9.26.5-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.5/digibyte-9.26.5-x86_64-linux-gnu.tar.gz",
+          "sha256": "37f6bf6a682f99b5966c2bd3f0cfe3013b60b7b55268958663231ebbf9e56773",
+          "size": 67422764,
+          "folder": "digibyte-9.26.5"
+        },
+        "aarch64": {
+          "file": "digibyte-9.26.5-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.5/digibyte-9.26.5-aarch64-linux-gnu.tar.gz",
+          "sha256": "6baf0c2673bcd635620108116ad57a2a5dc8e9e3d9380a2d708c070a72508587",
+          "size": 64679119,
+          "folder": "digibyte-9.26.5"
+        }
+      }
+    },
+    {
+      "version": "9.26.4",
+      "tag": "v9.26.4",
+      "published_at": "2026-07-02T21:52:37Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-9.26.4-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.4/digibyte-9.26.4-x86_64-linux-gnu.tar.gz",
+          "sha256": "523da7ac9ee0f1bcb38ff75da6f01997b9491a9eee1e2b0ce3c90f60b2aaa9b3",
+          "size": 67408783,
+          "folder": "digibyte-9.26.4"
+        },
+        "aarch64": {
+          "file": "digibyte-9.26.4-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.4/digibyte-9.26.4-aarch64-linux-gnu.tar.gz",
+          "sha256": "0ee31595a1dcbac56fcac7cabdb32be2d11acc9636deda134a58177beb8af113",
+          "size": 64663218,
+          "folder": "digibyte-9.26.4"
+        }
+      }
+    },
+    {
+      "version": "9.26.3",
+      "tag": "v9.26.3",
+      "published_at": "2026-07-01T02:10:11Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-9.26.3-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.3/digibyte-9.26.3-x86_64-linux-gnu.tar.gz",
+          "sha256": "51465a7a7409dc9a734e463b8fd95fb9773033753d79504de946ab2a0aa0991c",
+          "size": 67388370,
+          "folder": "digibyte-9.26.3"
+        },
+        "aarch64": {
+          "file": "digibyte-9.26.3-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.3/digibyte-9.26.3-aarch64-linux-gnu.tar.gz",
+          "sha256": "98ddd5460de28ea8b0bc87cda1e71e149b02e689e4be739b2ee6c9f213f80f1b",
+          "size": 64648473,
+          "folder": "digibyte-9.26.3"
+        }
+      }
+    },
+    {
+      "version": "9.26.2",
+      "tag": "v9.26.2",
+      "published_at": "2026-06-30T03:11:37Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-9.26.2-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.2/digibyte-9.26.2-x86_64-linux-gnu.tar.gz",
+          "sha256": "c9d85750bacd686f4e9e3e1f0504f9cfe9bf4647c6546f254c775ba2fa520469",
+          "size": 67383189,
+          "folder": "digibyte-9.26.2"
+        },
+        "aarch64": {
+          "file": "digibyte-9.26.2-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.2/digibyte-9.26.2-aarch64-linux-gnu.tar.gz",
+          "sha256": "9bc9330d6392eef8c070a0e5be3a270f997e32199f95cb4a24f71607694e53df",
+          "size": 64651047,
+          "folder": "digibyte-9.26.2"
+        }
+      }
+    },
+    {
+      "version": "8.26.2",
+      "tag": "v8.26.2",
+      "published_at": "2026-01-16T17:56:42Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-8.26.2-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.26.2/digibyte-8.26.2-x86_64-linux-gnu.tar.gz",
+          "sha256": "bffa56a4609e374010da36125c7f84521ef449f6c741a3ef765be4a23264535d",
+          "size": 48387033,
+          "folder": "digibyte-8.26.2"
+        },
+        "aarch64": {
+          "file": "digibyte-8.26.2-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.26.2/digibyte-8.26.2-aarch64-linux-gnu.tar.gz",
+          "sha256": "9c302fc000174ceaac70cde29823535edd12a9118fd29cdf0fc85d70f43b60ce",
+          "size": 46607154,
+          "folder": "digibyte-8.26.2"
+        }
+      }
+    },
+    {
+      "version": "8.26.1",
+      "tag": "v8.26.1",
+      "published_at": "2025-10-30T16:14:50Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-8.26.1-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.26.1/digibyte-8.26.1-x86_64-linux-gnu.tar.gz",
+          "sha256": "6dec9e0a0ddaab5e9e18022e57d6e2acccd73413e46b3d4818967e891fc04fc4",
+          "size": 48387358,
+          "folder": "digibyte-8.26.1"
+        }
+      }
+    },
+    {
+      "version": "8.26.0",
+      "tag": "v8.26.0",
+      "published_at": "2025-09-25T21:26:38Z",
+      "prerelease": true,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-8.26.0-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.26.0/digibyte-8.26.0-x86_64-linux-gnu.tar.gz",
+          "sha256": "6277231d483ca1e566080564aba6254b2b99bc22633b4b96a587e77ec2dc6547",
+          "size": 48389501,
+          "folder": "digibyte-8.26.0"
+        }
+      }
+    },
+    {
+      "version": "8.22.2",
+      "tag": "v8.22.2",
+      "published_at": "2025-03-27T21:33:55Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-8.22.2-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.2/digibyte-8.22.2-x86_64-linux-gnu.tar.gz",
+          "sha256": "edfcc9df8c2ecbba9b9e8d2332dee1ec3d053554c3700ca0151477f7375fc342",
+          "size": 37190631,
+          "folder": "digibyte-8.22.2"
+        },
+        "aarch64": {
+          "file": "digibyte-8.22.2-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.2/digibyte-8.22.2-aarch64-linux-gnu.tar.gz",
+          "sha256": "9e3fde26454fae9036973c931f8ba3c354c73afe1d0a598f573e227b12c73ad8",
+          "size": 35477515,
+          "folder": "digibyte-8.22.2"
+        }
+      }
+    },
+    {
+      "version": "8.22.1",
+      "tag": "v8.22.1",
+      "published_at": "2025-02-03T13:13:36Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-v8.22.1-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.1/digibyte-v8.22.1-x86_64-linux-gnu.tar.gz",
+          "sha256": "99972064ee82db8d049d81b140def276bb0950cc259b21879d3668c873bd2757",
+          "size": 37187411,
+          "folder": "digibyte-664c6a372bd2"
+        },
+        "aarch64": {
+          "file": "digibyte-v8.22.1-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.1/digibyte-v8.22.1-aarch64-linux-gnu.tar.gz",
+          "sha256": "e0b137c43dd095a15d19695e6ecf5a30c0d2b0b61c12dc182680e7277317280b",
+          "size": 35476292,
+          "folder": "digibyte-664c6a372bd2"
+        }
+      }
+    },
+    {
+      "version": "8.22.0-final",
+      "tag": "v8.22.0-final",
+      "published_at": "2025-01-16T00:30:47Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.0-final/digibyte-x86_64-linux-gnu.tar.gz",
+          "sha256": "5a305bd2fd94cb855c7fd2c969690a8675e6f17ee978f249ab97b54f326cef9d",
+          "size": 37183444,
+          "folder": "digibyte-d08150156624"
+        },
+        "aarch64": {
+          "file": "digibyte-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.0-final/digibyte-aarch64-linux-gnu.tar.gz",
+          "sha256": "684df37faca42f39d9e246a9d245c0e71885c1c7dc222847cd738c1a324f3cad",
+          "size": 35458012,
+          "folder": "digibyte-d08150156624"
+        }
+      }
+    },
+    {
+      "version": "8.22.0-rc5",
+      "tag": "v8.22.0-rc5",
+      "published_at": "2024-12-24T14:08:14Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.0-rc5/digibyte-x86_64-linux-gnu.tar.gz",
+          "sha256": "f69faa1206ee2131c974de72412ea899b944f4a7a4cf083157406851354df59b",
+          "size": 37176230,
+          "folder": "digibyte-21698e78d705"
+        },
+        "aarch64": {
+          "file": "digibyte-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.0-rc5/digibyte-aarch64-linux-gnu.tar.gz",
+          "sha256": "12844776b384d8b38fd690de65edba7742aa724b02fdc47c3675bea0cea4c7c4",
+          "size": 35461223,
+          "folder": "digibyte-21698e78d705"
+        }
+      }
+    },
+    {
+      "version": "8.22.0-rc4",
+      "tag": "v8.22.0-rc4",
+      "published_at": "2024-04-02T01:53:55Z",
+      "prerelease": true,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-8.22.0-rc4-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.0-rc4/digibyte-8.22.0-rc4-x86_64-linux-gnu.tar.gz",
+          "sha256": "83b2494c7f103c9826e7d77b2cfdd4d6cf0a33606a2ece1f95f8f3378633be67",
+          "size": 37177351,
+          "folder": "digibyte-527219d69dd9"
+        },
+        "aarch64": {
+          "file": "digibyte-8.22.0-rc4-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.0-rc4/digibyte-8.22.0-rc4-aarch64-linux-gnu.tar.gz",
+          "sha256": "e3e107ca72d93fc1a5b7fa46a709920b8233e541063c1b934e2e010789fcc507",
+          "size": 35462909,
+          "folder": "digibyte-527219d69dd9"
+        }
+      }
+    },
+    {
+      "version": "8.22.0-rc3",
+      "tag": "v8.22.0-rc3",
+      "published_at": "2024-02-03T20:29:34Z",
+      "prerelease": true,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-8.22.0-rc3-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.0-rc3/digibyte-8.22.0-rc3-x86_64-linux-gnu.tar.gz",
+          "sha256": "f8e331aa9f88020dd7d853491e46284a2148e62840b0bbb0cbf5435fe9f29212",
+          "size": 36701002,
+          "folder": "digibyte-af6d4e3cdef0"
+        },
+        "aarch64": {
+          "file": "digibyte-8.22.0-rc3-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.0-rc3/digibyte-8.22.0-rc3-aarch64-linux-gnu.tar.gz",
+          "sha256": "0dbd80aea77601a4327d6a901b627bcea81999f582e3d260af7070a05893fdbb",
+          "size": 35022441,
+          "folder": "digibyte-af6d4e3cdef0"
+        }
+      }
+    },
+    {
+      "version": "8.22.0-rc2",
+      "tag": "v8.22.0-rc2",
+      "published_at": "2023-04-14T19:54:36Z",
+      "prerelease": true,
+      "assets": {
+        "x86_64": {
+          "file": "DigiByte-v8.22.0-RC2-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.0-rc2/DigiByte-v8.22.0-RC2-x86_64-linux-gnu.tar.gz",
+          "sha256": "27a1543022515769e3ec16366477b7c4a4c6f88a2e2cc1520e205e56dd4e4ee5",
+          "size": 36870881,
+          "folder": "digibyte-af42429717ac"
+        },
+        "aarch64": {
+          "file": "DigiByte-v8.22.0-RC2-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v8.22.0-rc2/DigiByte-v8.22.0-RC2-aarch64-linux-gnu.tar.gz",
+          "sha256": "6e890e356a1505312f7c1005b1e031da1f277bfb7108a6ad153d761c5f69938c",
+          "size": 35198182,
+          "folder": "digibyte-af42429717ac"
+        }
+      }
+    },
+    {
+      "version": "7.17.3",
+      "tag": "v7.17.3",
+      "published_at": "2021-05-13T02:38:06Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-7.17.3-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v7.17.3/digibyte-7.17.3-x86_64-linux-gnu.tar.gz",
+          "sha256": "b5cd8f590d359e4846dd5cbe60751221e54d773a6227ea9686d17c4890057f46",
+          "size": 31933513,
+          "folder": "digibyte-7.17.3"
+        },
+        "aarch64": {
+          "file": "digibyte-7.17.3-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v7.17.3/digibyte-7.17.3-aarch64-linux-gnu.tar.gz",
+          "sha256": "f525d464a5689496f2cff017d0ad59346cfc0d39c64dff179cf8561e799b5b0b",
+          "size": 30635501,
+          "folder": "digibyte-7.17.3"
+        }
+      }
+    },
+    {
+      "version": "7.17.2",
+      "tag": "v7.17.2",
+      "published_at": "2020-06-21T06:00:09Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-7.17.2-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v7.17.2/digibyte-7.17.2-x86_64-linux-gnu.tar.gz",
+          "sha256": "caa8ecc42cbebbd2c43e742c7ecc2dd21d76a9e2db23676af428b67b131f6413",
+          "size": 31994580,
+          "folder": "digibyte-7.17.2"
+        },
+        "aarch64": {
+          "file": "digibyte-7.17.2-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v7.17.2/digibyte-7.17.2-aarch64-linux-gnu.tar.gz",
+          "sha256": "75a8239a9ebbbb82d6c7d176f3f6f2ec57a476b51b5b66e6b6c086ef733c1eda",
+          "size": 30704871,
+          "folder": "digibyte-7.17.2"
+        }
+      }
+    }
+  ]
+}

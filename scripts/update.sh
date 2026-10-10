@@ -186,27 +186,43 @@ while IFS= read -r release; do
         digest=$(jq -r '.digest // "" | sub("^sha256:"; "")' <<<"$asset")
 
         pinned=$(jq -r --arg a "$arch" '.assets[$a].sha256 // ""' <<<"$stored")
+        pinned_folder=$(jq -r --arg a "$arch" '.assets[$a].folder // ""' <<<"$stored")
         pinned_fingerprint=$(jq -r --arg a "$arch" '.assets[$a] // {} | "\(.asset_id):\(.size):\(.updated_at)"' <<<"$stored")
 
         # Nothing has changed on GitHub since we pinned it, so there's nothing to download
-        if [ -n "$pinned" ] && [ "$RECHECK" = false ] \
+        # (unless it was pinned before we recorded the folder inside the tarball)
+        if [ -n "$pinned" ] && [ -n "$pinned_folder" ] && [ "$RECHECK" = false ] \
             && [ "$asset_id:$size:$updated" = "$pinned_fingerprint" ] \
             && { [ -z "$digest" ] || [ "$digest" = "$pinned" ]; }; then
             unchanged=$((unchanged + 1))
             continue
         fi
 
-        if [ -n "$pinned" ] && [ "$RECHECK" = false ]; then
+        if [ -n "$pinned" ] && [ -z "$pinned_folder" ] && [ "$RECHECK" = false ]; then
+            log "  $key $arch: checking the tarball layout, which wasn't recorded when it was pinned"
+        elif [ -n "$pinned" ] && [ "$RECHECK" = false ]; then
             log "  $key $arch: binary has changed on GitHub since it was pinned - re-verifying"
         fi
 
         log "  $key $arch: downloading $name"
         download "$url" "$WORK/binary"
         hash=$(sha256 "$WORK/binary")
-        rm -f "$WORK/binary"
 
         verified_by="download"
         ok=true
+
+        # 0. The tarball must contain a single folder with the DigiByte binaries in it. DigiNode Setup
+        #    unpacks it into a folder of its own, so the name of this folder doesn't matter.
+        tar -tzf "$WORK/binary" | sed 's|^\./||' > "$WORK/listing" || : > "$WORK/listing"
+        rm -f "$WORK/binary"
+        folder=$(cut -d/ -f1 "$WORK/listing" | sort -u | grep -v '^$' || true)
+        if [ "$(printf '%s\n' "$folder" | grep -c .)" -ne 1 ]; then
+            alarm "$key $arch: expected the tarball to contain one folder, but found: $(printf '%s ' $folder)"
+            ok=false
+        elif ! grep -qx "$folder/bin/digibyted" "$WORK/listing" || ! grep -qx "$folder/bin/digibyte-cli" "$WORK/listing"; then
+            alarm "$key $arch: the tarball doesn't contain $folder/bin/digibyted and $folder/bin/digibyte-cli"
+            ok=false
+        fi
 
         # 1. The hash GitHub calculated when the file was uploaded (only on releases from mid-2025)
         if [ -n "$digest" ]; then
@@ -271,11 +287,12 @@ while IFS= read -r release; do
             hold=true
         fi
 
-        update_state --arg k "$key" --arg a "$arch" --arg file "$name" --arg hash "$hash" \
-            --argjson id "$asset_id" --argjson size "$size" --arg updated "$updated" \
+        update_state --arg k "$key" --arg a "$arch" --arg file "$name" --arg url "$url" --arg hash "$hash" \
+            --argjson id "$asset_id" --argjson size "$size" --arg updated "$updated" --arg folder "$folder" \
             --arg uploader "$uploader" --arg by "$verified_by" --arg now "$NOW" '
             .releases[$k].assets[$a] = {
-                file: $file, sha256: $hash, asset_id: $id, size: $size, updated_at: $updated,
+                file: $file, url: $url, sha256: $hash, size: $size, folder: $folder,
+                asset_id: $id, updated_at: $updated,
                 uploader: $uploader, verified_by: ($by | split(" ")), verified_at: $now
             }'
 
@@ -325,19 +342,53 @@ for group in 0 1 2 3 4; do
 done
 
 # ------------------------------------------------------------------------------------------
+# Build the release files for DigiNode Setup v0.12.0 onwards
+#
+#   releases0.json   - staging, as hash0.json
+#   releases1-4.json - update groups, as hash1-4.json
+#
+# Each lists the releases available to that group, newest first, with everything needed to download,
+# verify and unpack them, so DigiNode Setup never has to work out a file name. "latest" and
+# "latest_release" are the newest versions on GitHub, which may still be waiting to reach the group.
+
+latest=$(jq -rs 'first.tag_name // "" | sub("^v"; "")' "$WORK/wanted.jsonl")
+latest_release=$(jq -rs 'map(select(.prerelease | not)) | first.tag_name // "" | sub("^v"; "")' "$WORK/wanted.jsonl")
+
+for group in 0 1 2 3 4; do
+    jq --arg g "$group" --arg now "$NOW" --arg latest "$latest" --arg latest_release "$latest_release" '
+        {
+            latest: $latest,
+            latest_release: $latest_release,
+            releases: [
+                .releases | to_entries[]
+                | select(.value.status != "revoked")
+                | select($g == "0" or (.value.status == "active" and (.value.rollout[$g] // "9999") <= $now))
+                | {
+                    version: (.key | sub("^digibyte-"; "")),
+                    tag: .value.tag,
+                    published_at: .value.published_at,
+                    prerelease: .value.prerelease,
+                    assets: (.value.assets | map_values({file, url, sha256, size, folder}))
+                  }
+            ]
+        }' "$WORK/state.json" > "$WORK/releases$group.json"
+done
+
+# ------------------------------------------------------------------------------------------
 # Save and report
 
 if [ "$DRY_RUN" = false ]; then
     cp "$WORK/state.json" "$STATE_FILE"
     for group in 0 1 2 3 4; do
         cp "$WORK/hash$group.json" "$ROOT/hash$group.json"
+        cp "$WORK/releases$group.json" "$ROOT/releases$group.json"
     done
 fi
 
 log ""
 log "New hashes pinned: $added    Unchanged: $unchanged"
 for group in 0 1 2 3 4; do
-    log "  hash$group.json: $(jq 'length' "$WORK/hash$group.json") releases"
+    log "  hash$group.json / releases$group.json: $(jq 'length' "$WORK/hash$group.json") releases"
 done
 [ "$DRY_RUN" = true ] && log "Dry run - no files written"
 
