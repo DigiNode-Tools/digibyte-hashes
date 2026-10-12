@@ -1,4 +1,4 @@
-Required Notice: Copyright (c) 2026 Olly Stedall (https://diginode.tools)
+Required Notice: Copyright (c) 2026 Oliver Stedall (https://diginode.tools)
 
 This repository (digibyte-hashes) is part of DigiNode Tools and is licensed under the PolyForm Perimeter License 1.0.0 below. The DigiNode Tools name and logo aren't covered by this licence - see https://github.com/DigiNode-Tools/diginode-tools/blob/main/TRADEMARKS.md. For a plain-English summary, see https://github.com/DigiNode-Tools/diginode-tools/blob/main/docs/licence_faq.md
 
