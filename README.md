@@ -49,3 +49,7 @@ scripts/update.sh --dry-run   # check without writing any files
 Needs `curl` and `jq`. Works on macOS and Linux. Uses your `gh` login if you have one, to avoid API rate limits.
 
 The schedule can also be started by hand from the Actions tab (**Run workflow**), with an option to recheck everything.
+
+## Licence
+
+Part of DigiNode Tools: free to use, and the code is public so anyone can see exactly what it does. Licensed under the [PolyForm Perimeter 1.0.0](LICENCE.md) licence, which doesn't allow it to be used to make a competing product - see the [Licence FAQ](https://github.com/DigiNode-Tools/diginode-tools/blob/main/docs/licence_faq.md). The DigiNode Tools name and logo are covered by [TRADEMARKS.md](https://github.com/DigiNode-Tools/diginode-tools/blob/main/TRADEMARKS.md).
