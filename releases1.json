@@ -3,6 +3,28 @@
   "latest_release": "9.26.7",
   "releases": [
     {
+      "version": "9.26.6",
+      "tag": "v9.26.6",
+      "published_at": "2026-10-01T19:17:45Z",
+      "prerelease": false,
+      "assets": {
+        "x86_64": {
+          "file": "digibyte-9.26.6-x86_64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.6/digibyte-9.26.6-x86_64-linux-gnu.tar.gz",
+          "sha256": "cdbd6ed7efdb006b91b76389db79d2a3db2593f05e56dd789f394a1b4366c211",
+          "size": 69746495,
+          "folder": "digibyte-9.26.6"
+        },
+        "aarch64": {
+          "file": "digibyte-9.26.6-aarch64-linux-gnu.tar.gz",
+          "url": "https://github.com/DigiByte-Core/digibyte/releases/download/v9.26.6/digibyte-9.26.6-aarch64-linux-gnu.tar.gz",
+          "sha256": "05cc75f57e934882673b941f1c9c0b99eaddc2fd7fa797224b7187c95db61e96",
+          "size": 66859352,
+          "folder": "digibyte-9.26.6"
+        }
+      }
+    },
+    {
       "version": "9.26.6rc2",
       "tag": "v9.26.6rc2",
       "published_at": "2026-09-22T21:35:48Z",
