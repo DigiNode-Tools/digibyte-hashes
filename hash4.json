@@ -1,4 +1,8 @@
 {
+  "digibyte-9.26.7": {
+    "x86_64": "85f1a587e7d45fc63ef65cbbd0e5fa56f6d94f2f5cd7657a8d02ba66638cd8d6",
+    "aarch64": "e194e267306fbf12953812d402c1cd49ccc3ed32186a754e5b8683325dfd754e"
+  },
   "digibyte-9.26.6": {
     "x86_64": "cdbd6ed7efdb006b91b76389db79d2a3db2593f05e56dd789f394a1b4366c211",
     "aarch64": "05cc75f57e934882673b941f1c9c0b99eaddc2fd7fa797224b7187c95db61e96"
